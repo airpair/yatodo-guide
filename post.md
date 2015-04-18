@@ -88,19 +88,9 @@ $ git branch -r
 $ git checkout -b ninja-stage-1 origin/ninja-stage-1
 ```
 
-Direct links to the branches:
-[https://github.com/ksachdeva/YATODO/tree/ninja-stage-1](https://github.com/ksachdeva/YATODO/tree/ninja-stage-1)
-
-[https://github.com/ksachdeva/YATODO/tree/ninja-stage-2](https://github.com/ksachdeva/YATODO/tree/ninja-stage-2)
-
-[https://github.com/ksachdeva/YATODO/tree/ninja-stage-3](https://github.com/ksachdeva/YATODO/tree/ninja-stage-3)
-
-[https://github.com/ksachdeva/YATODO/tree/ninja-stage-4](https://github.com/ksachdeva/YATODO/tree/ninja-stage-4)
-
-[https://github.com/ksachdeva/YATODO/tree/ninja-stage-5](https://github.com/ksachdeva/YATODO/tree/ninja-stage-5)
-
-
 ### Stage 1
+
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-1](https://github.com/ksachdeva/YATODO/tree/ninja-stage-1)
 
 As we discussed earlier, firebase has a notion of security rules using which you can specify permissions for data read and write. Writing those security rules could be bit challenging and hence we are going to spend a lot of time discussing the rules. As the best way to explain is by showing the code so here we go -
 
@@ -493,6 +483,8 @@ FIREBASE WARNING: set at /users/simplelogin:2/profile failed: permission_denied
 
 ### Stage 2
 
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-2](https://github.com/ksachdeva/YATODO/tree/ninja-stage-2)
+
 We spent lot of time in stage 1 to learn first about using the simulation and then setting up a test project for us. Now we would work out some more complicated rules and data structure for our solution.
 
 ```
@@ -815,6 +807,9 @@ it('should allow reading organizations list of users/simplelogin:1 by user simpl
 ```
 
 ### Stage 3
+
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-3](https://github.com/ksachdeva/YATODO/tree/ninja-stage-3)
+
 
 So by now we have management of staff under control and it is time to discuss the todo items. Here is a re-cap of our requirements for todo items.
 
@@ -1142,6 +1137,9 @@ Stage3 Test Cases
 
 ### Stage 4
 
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-4](https://github.com/ksachdeva/YATODO/tree/ninja-stage-4)
+
+
 Finally, the time to talk about how to implement the required business logic on the server side to get our user's email verified. The email verification is typically done in 2 different ways:
 
     * Send an email to the user with a link to a web url. User is supposed to click on it and clicking on it will execute the necessary logic at server.
@@ -1368,6 +1366,9 @@ node yatodo-cli.js verify <email> <password> <code>
 If you would provide the correct arguments for verify command then the worker2.js would kick in and set the 'verified' data structure to true and voila we have our user's email verified.
 
 ### Stage 5
+
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-5](https://github.com/ksachdeva/YATODO/tree/ninja-stage-5)
+
 
 Thanks to firebase infrastructure we have been able to find a storage for our data (user management, org management, todo items etc) & have support for mult-tenancy and security using the security rules language. We did not have to worry about the scalability of our solution until we introduced our servers (worker1 & worker2). Now we are responsible for making sure that they are capable of addressing heavy load. Wouldn't it have been great if all we were required was to write a simple server side business logic but actual running and scaling of the execution was not our problem !!
 
