@@ -88,6 +88,18 @@ $ git branch -r
 $ git checkout -b ninja-stage-1 origin/ninja-stage-1
 ```
 
+Direct links to the branches:
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-1](https://github.com/ksachdeva/YATODO/tree/ninja-stage-1)
+
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-2](https://github.com/ksachdeva/YATODO/tree/ninja-stage-2)
+
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-3](https://github.com/ksachdeva/YATODO/tree/ninja-stage-3)
+
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-4](https://github.com/ksachdeva/YATODO/tree/ninja-stage-4)
+
+[https://github.com/ksachdeva/YATODO/tree/ninja-stage-5](https://github.com/ksachdeva/YATODO/tree/ninja-stage-5)
+
+
 ### Stage 1
 
 As we discussed earlier, firebase has a notion of security rules using which you can specify permissions for data read and write. Writing those security rules could be bit challenging and hence we are going to spend a lot of time discussing the rules. As the best way to explain is by showing the code so here we go -
