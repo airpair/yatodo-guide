@@ -3,10 +3,10 @@
 In this guide you would learn how to use open technology stacks and a set of cloud services & platforms (that provide free tier) to create a multi-tenant, real time, secure and scalable solution.
 
 #### Multitenancy
-[Multitenancy](http://en.wikipedia.org/wiki/Multitenancy) in simple words mean that your software architecture should be able to support multiple customers or tenants. A multtenant application would not require you to run separate or customized instances for different customer organizations. For the purpose of this guide the multitenancy is desired from the logical separation of data and does not require physical separation of the data.   
+[Multitenancy](http://en.wikipedia.org/wiki/Multitenancy) in simple words mean that your software architecture should be able to support multiple customers or tenants. A multi-tenant application would not require you to run separate or customized instances for different customer organizations. For the purpose of this guide the multitenancy is desired from the logical separation of data and does not require physical separation of the data.   
 
 #### Real Time
-For the puposes of this guide, real time means that client applications would be able to receive new or updated information with out explicitly polling the servers. JavaScript front end applications make use of websockets to achieve injection of new content with out the application layer performing polling.
+For the puposes of this guide, real time means that client applications would be able to receive new or updated information without explicitly polling the servers. JavaScript front end applications make use of websockets to achieve injection of new content without the application layer performing polling.
 
 #### Scalable
 The solution should be able to handle the load as the number of users of the solution grow. We would make use of auto scaling capabilities of various cloud platforms with mimumum configuration or operational head aches from our side, however we must strive to design our data structures to be more performance aware.
@@ -170,7 +170,7 @@ A registerd and authenticated user should be able to read and write his/her prof
 
 So here is what this updated rules definition is doing - 
 
-* it would allow reading & write the profile object at path users/$userId/ if the authenticated user has an auth.uid that is equal to $userId
+* it would allow reading & writing of the profile object at path users/$userId/ if the authenticated user has an auth.uid that is equal to $userId
 
 * auth.uid is a firebase magic variable that contains the uid of the authenticated user
 
