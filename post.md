@@ -1542,7 +1542,7 @@ We are left with some tasks to be completed for our solution. The main one would
 
 I am leaving that as an exercise for the readers of this article (*Hint that it is not very different from user's email verification* :))
 
-If you wish you can check the solution in the stage-6 branch but I would insist to first try on your own as it would be a great exercise.
+If you wish you can check the solution, it is in the stage-6 branch but I would insist to first try on your own as it would be a great exercise.
 
 You would also find in the stage-6 branch an [ionic](http://ionicframework.com) application that makes use of our firebase backend. 
 
@@ -1550,6 +1550,10 @@ Describing the ionic application is outside the scope of this guide and you woul
 
 ```bash
 git checkout -b ninja-stage-6 origin/ninja-stage-6
+cd YATODO\src\client\mobile
+npm install
+bower install
+ionic serve --lab
 ```
 
 [https://github.com/ksachdeva/YATODO/tree/ninja-stage-6](https://github.com/ksachdeva/YATODO/tree/ninja-stage-6)
