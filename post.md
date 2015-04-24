@@ -61,7 +61,7 @@ As you can see they provide an impressive set of services. However, there is no 
 
 ### Firebase
 
-Firebase (now part of Google) also offers cloud database with support for user registration and authentication. Instead of having an ACL on the data objects, you get to define the access control using a security language. The main benefit of their approach is that it helps in managing the security rules much more eligantly and they all are in one place. Having them decopuled from data is a great design choice. The most notable feature of firebase is the real time aspect of their offering. They have made it almost trivial to develop real time applications.
+Firebase (now part of Google) also offers cloud database with support for user registration and authentication. Instead of having an ACL on the data objects, you get to define the access control using a security language. The main benefit of their approach is that it helps in managing the security rules much more elegantly and they all are in one place. Having them decoupled from data is a great design choice. The most notable feature of firebase is the real time aspect of their offering. They have made it almost trivial to develop real time applications.
 
 ## The fun begins
 
@@ -586,7 +586,7 @@ That being said, the data duplication is not really the thing to worry about her
 
 The above mentioned concerns are the security issues, unfortunately at this time firebase does not have the support for "Email Verification" when user creates/register an account. For the second issue, writing the organization entries in "users" data structure must be done on the server. In other words, it should not be driven by the client application.
 
-Wait, what !! .. Did you say "Server" ?. You may say - I would like to make use of BaaS (Backend as a Service), write a mobile app and would ideally want to stay away from running/managing a server. These was an important objective for us.
+Wait, what !! .. Did you say "Server" ?. You may say - I would like to make use of BaaS (Backend as a Service), write a mobile app and would ideally want to stay away from running/managing a server. This was an important objective for us.
 
 Now, dear reader, the issues are very real and they do require some business logic to be run on the server but I do not disagree with your objective of staying away from running a server farm and managing them. 
 
@@ -707,7 +707,7 @@ Our simpler security rules are now getting more complex. Lets address them one b
     - root.child("users").child(auth.uid).child('organizations') will point to users/$userId/organizations list
     - now by doing root.child ........('organizations').hasChildren($organization) we are checking if the 'organizations' contain $organization or not. This was our objective
 
-* The "about" data structure should be updatable by the admin. The rules are similar to what we just discussed with the differnce that we need to be able to read the value of 'role' from here users/$userId/organizations/$organization/role. The usage of root.child('..').child('...') should be clear now.
+* The "about" data structure should be updatable by the admin. The rules are similar to what we just discussed with the difference that we need to be able to read the value of 'role' from here users/$userId/organizations/$organization/role. The usage of root.child('..').child('...') should be clear now.
 
 * If you have understood the "about" then understanding the rules for "staff/$staffId" should not be difficult. They are same as that of .write for 'about' data structure 
 
@@ -857,7 +857,7 @@ Based on this first we would try to define our data structure for todo items
 }
 ```
 
-In the above data structure, we have organized the todo items using the unique ids of the staff. Because of this structure, one could fetch all the todos of all the staff members by simply reading the reference "/organizations/-uniqueOrgId_1/todos" and if intersted in reading todos of one particular staff then would read the reference url "/organizations/-uniqueOrgId_1/todos/-uniqueStaffId_1" 
+In the above data structure, we have organized the todo items using the unique ids of the staff. Because of this structure, one could fetch all the todos of all the staff members by simply reading the reference "/organizations/-uniqueOrgId_1/todos" and if interested in reading todos of one particular staff then would read the reference url "/organizations/-uniqueOrgId_1/todos/-uniqueStaffId_1" 
 
 Time for the rules now -
 
